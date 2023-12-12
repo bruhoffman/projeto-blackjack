@@ -13,11 +13,16 @@ if (confirm("Quer iniciar uma nova rodada?")) {
       console.log(`Usuário - cartas: ${cartasUsuario1.texto} ${cartasUsuario2.texto} - pontuação: ${somaCartasUsuario}`);
       console.log(`Computador - cartas: ${cartasComputador1.texto} ${cartasComputador2.texto} - pontuação: ${somaCartasComputador}`);
       console.log(`O usuário ganhou!`);
-   } else {
+   } else if (somaCartasUsuario < somaCartasComputador) {
       console.log(`Usuário - cartas: ${cartasUsuario1.texto} ${cartasUsuario2.texto} - pontuação: ${somaCartasUsuario}`);
       console.log(`Computador - cartas: ${cartasComputador1.texto} ${cartasComputador2.texto} - pontuação: ${somaCartasComputador}`);
       console.log(`O computador ganhou!`);
+   } else {
+      console.log(`Usuário - cartas: ${cartasUsuario1.texto} ${cartasUsuario2.texto} - pontuação: ${somaCartasUsuario}`);
+      console.log(`Computador - cartas: ${cartasComputador1.texto} ${cartasComputador2.texto} - pontuação: ${somaCartasComputador}`);
+      console.log(`Empate!`)
    }
+
 } else {
    console.log("O jogo acabou!")
 }
